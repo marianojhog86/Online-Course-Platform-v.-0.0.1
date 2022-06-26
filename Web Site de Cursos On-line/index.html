@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+<head>
+	<link rel="shortcut icon" type="png" href="images/icon/mle.png">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Comaptible" content="IE=edge">
+	<title>MLE.TEC</title>
+	<meta name="desciption" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script>
+		$(window).on('scroll', function(){
+  			if($(window).scrollTop()){
+  			  $('nav').addClass('black');
+ 			 }else {
+ 		   $('nav').removeClass('black');
+ 		 }
+		})
+	</script>
+</head>
+<body>
+<!-- Navigation Bar -->
+	<header id="header">
+		<nav>
+			<div class="logo"><img src="images/icon/mle.png" alt="logo"></div>
+			<ul>
+				<li><a class="active" href="">Home</a></li>
+				<li><a href="#sobre_section">Sobre</a></li>
+				<li><a href="#portfolio_section">Portfolio</a></li>
+				<li><a href="#time_section">Time</a></li>
+				<li><a href="#servicos_section">Servicos</a></li>
+				<li><a href="#review_section">Review</a></li>
+				<li><a href="#contato_section">Contato</a></li>
+			</ul>
+			<div class="srch"><input type="text" class="search" placeholder="pesquise aqui..."><img src="images/icon/search1.png" alt="search" onclick=slide()></div>
+			<a class="get-started" href="login.html">COMECE AGORA</a>
+			<img src="images/icon/menu1.png" class="menu" onclick="sideMenu(0)" alt="menu">
+		</nav>
+		<div class="head-container">
+			<div class="quote">
+				<p>Experimente uma plataforma de aprendizado que irá mudar seu pensamento sobre estudar programação</p>
+				<div class="play">
+					<img src="images/icon/play.png" alt="play"><span><a href="https://www.youtube.com/watch?v=KFyrgDO1WXk" target="_blank">Assista Agora</a></span>
+				</div>
+			</div>
+			<div class="svg-image">
+				<img src="images/extra/svg1.png" alt="svg">
+			</div>
+		</div>
+		<div class="side-menu" id="side-menu">
+			<div class="close" onclick="sideMenu(1)"><img src="images/icon/close.png" alt=""></div>
+			<div class="user">
+				<img src="images/icon/mle.png" alt="Username">
+				<p>MLE.TEC</p>
+			</div>
+			<ul>
+				<li><a href="#sobre_section">Sobre</a></li>
+				<li><a href="#portfolio_section">Portfolio</a></li>
+				<li><a href="#time_section">Time</a></li>
+				<li><a href="#servicos_section">Servicos</a></li>
+				<li><a href="#contato_section">Contato</a></li>
+				<li><a href="#feedBACK">Feedback</a></li>
+			</ul>
+		</div>
+	</header>
+
+
+	
+<!-- ABOUT -->
+	<div class="diffSection" id="sobre_section">
+		<center><p style="font-size: 50px; padding: 100px">Sobre</p></center>
+		<div class="about-content">
+				<div class="side-image">
+					<img class="sideImage" src="images/extra/e3.jpg">
+				</div>
+				<div class="side-text">
+					<h2>Em que você pensa sobre educação ?</h2>
+					<p>A educação é o processo de facilitar a aprendizagem, ou a aquisição de conhecimentos, habilidades, valores, crenças e hábitos. Os métodos educacionais incluem ensino, treinamento, contação de histórias, discussão e pesquisa dirigida.<br>O site educacional pode incluir sites com jogos, videos ou recursos relacionados a tópicos que atuam como ferramentas para aprimorar o aprendizado e complementar o ensino em sala de aula. Esses sites ajudam a tornar o processo de aprendizagem divertido e atraente para o aluno, especialmente <br>Usando HTML(HyperText Markup Language), CSS(Cascading Style Sheet), JavaScript, podemos tornar o aprendizado mais fácil e interessante.</p>
+				</div>
+		</div>
+	</div>
+
+
+<!-- PORTFOLIO -->
+	<div class="diffSection" id="portfolio_section">
+		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px;">Portfolio</p></center>
+		<div class="content">
+			<p>
+				“Educação é o passaporte para o futuro, pois o amanhã pertence a quem se prepara hoje.” “Sua atitude, não sua aptidão, determinará seu futuro.” “Se você acha que a educação é cara, experimente a ignorância.” “A única pessoa educada é aquela que aprendeu a aprender… e mudar.”
+			</p>
+		</div>
+	</div>
+	<div class="extra">
+		<p>Estamos aumentando esses dados a cada ano</p>
+		<div class="smbox">
+		<span><center><div class="data">154</div><div class="det">Alunos Matriculados</div></center></span>
+		<span><center><div class="data">62</div><div class="det">Total de Cursos</div></center></span>
+		<span><center><div class="data">56</div><div class="det">Alunos Bem Colocados</div></center></span>
+		<span><center><div class="data">27</div><div class="det">Total de Projetos</div></center></span>
+		</div>
+	</div>
+
+
+<!-- TEAM -->
+	<div class="diffSection" id="time_section">
+		<center><p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px;">Nossos Colaboradores</p></center>
+		<div class="totalcard">
+			<div class="card">
+				<center><img src="images/creator/mariano.png"></center>
+				<center><div class="card-title">Mariano</div>
+				<div id="detail">
+					<p>“ Você pode ensinar uma lição a um aluno por um dia; mas se você puder ensiná-lo a aprender criando curiosidade, ele continuará o processo de aprendizado enquanto viver “</p>
+					<div class="duty"></div>
+					<a href="https://www.instagram.com/mariano_sousa1/" target="_blank"><button class="btn-mariano">Follow +</button></a>
+				</div>
+				</center>
+			</div>
+			<div class="card">
+				<center><img src="images/creator/marcos.png"></center>
+				<center><div class="card-title">Marcos</div>
+				<div id="detail">
+					<p>“ A verdadeira educação deve consistir em extrair a bondade e o melhor de nossos próprios alunos. Que livros melhores podem existir do que o livro da humanidade “</p>
+					<div class="duty"></div>
+					<a href="https://www.instagram.com/markin_sousah/" target="_blank"><button class="btn-marcos">Follow +</button></a>
+				</div>
+				</center>
+			</div>
+		</div>
+	</div>
+
+
+<!-- SERVICES -->
+	<div class="service-swipe">
+		<div class="diffSection" id="servicos_section">
+		<center><p style="font-size: 50px; padding: 100px; padding-bottom: 40px; color: #fff;">Servicos</p></center>
+		</div>
+		<a href="subjects/computer_courses.html"><div class="s-card"><img src="images/icon/computer-courses.png"><p>Cursos de Programação On-line Grátis </p></div></a>
+		<a href="subjects/jee.html"><div class="s-card"><img src="images/icon/brainbooster.png"><p>Construa Projetos e Dispute Com Outros Alunos</p></div></a>
+		<a href="#"><div class="s-card"><img src="images/icon/online-tutorials.png"><p>Aulas 100% Online </p></div></a>
+		<a href="subjects/jee.html#sample_papers"><div class="s-card"><img src="images/icon/papers.jpg"><p>Veja e Replique Varios Outros Projetos</p></div></a>
+		<a href="#"><div class="s-card"><img src="images/icon/p3.png"><p>Relatório de Desempenho e Classificação</p></div></a>
+		<a href="#contactus_section"><div class="s-card"><img src="images/icon/discussion.png"><p>Fórum com Alunos e Professores</p></div></a>
+		<a href="subjects/quiz.html"><div class="s-card"><img src="images/icon/q1.png"><p>Atividades Diarias Para Melhorar o Raciocínio Lógico </p></div></a>
+		<a href="#contactus_section"><div class="s-card"><img src="images/icon/help.png"><p>Suporte On-line 24 Horas</p></div></a>
+	</div>
+
+<!-- Reviews by Students -->
+<div id="makeitfull">
+	<a href="#review_section"><img src="images/icon/checkbox.png"></a>
+</div>
+<div class="review">
+	<div class="diffSection" id="review_section">
+		<center><p style="font-size: 40px; padding: 100px; padding-bottom: 40px; color: #2E3D49;">Veja os depoimentos de nossos alunos</p></center>
+	</div>
+	<div class="rev-container">
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/humanNotExist1.jpg"><p>Sophia Daniele</p>
+				<h6>Java</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					Fiz curso basíco de Java, Foi uma ótima experiência. Os quebra-cabeças e tarefas, na verdade, todo o conteúdo foi muito bom. Alguns problemas foram desafiadores, mas interessantes.
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/humanNotExist2.jpg"><p>Clayton Costa</p>
+				<h6>C/C++</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					Quando eu estava assistindo as aulas os professores deram lições de vida de codificação que irão me guiar ao longo da vida de construções de códigos...
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/humanNotExist3.jpg"><p>David Silva</p>
+				<h6>JEE</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					Estudar na MLE.TEC foi uma experiência incrível para mim. Eu pertenço ao departamento de eletrônica e tinha um pouco de experiência em codificação, mas acho que isso me ajudou a pensar as coisas de uma maneira muito mais analítica.
+				</p>
+			</div>
+		</div>
+		<div class="rev-card">
+			<div class="identity">
+				<img src="images/creator/humanNotExist4.jpg"><p>Graziely Morais</p>
+				<h6>Python</h6>
+				<div class="rating"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"><img src="images/icon/star.png"></div>
+			</div>
+			<div class="rev-cont">
+				<p id="title">Review:</p>
+				<p id="content">
+					Este foi meu primeiro curso completo de codificação, participei do curso de Python no inverno de 2020 e adorei.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- CONTACT US -->
+	<div class="diffSection" id="contato_section">
+		<center><p style="font-size: 50px; padding: 100px">Fale conosco</p></center>
+		<div class="csec"></div>
+		<div class="back-contact">
+			<div class="cc">
+			<form action="mailto:marianojhog86@gmail.com" method="post" enctype="text/plain">
+				<label>Primeiro nome<span class="imp">*</span></label><label style="margin-left: 185px">Sobrenome<span class="imp">*</span></label><br>
+				<center>
+				<input type="text" name="" style="margin-right: 10px; width: 175px" required="required"><input type="text" name="lname" style="width: 175px" required="required"><br>
+				</center>
+				<label>Email <span class="imp">*</span></label><br>
+				<input type="email" name="mail" style="width: 100%" required="required"><br>
+				<label>Mensagem <span class="imp">*</span></label><br>
+				<input type="text" name="message" style="width: 100%" required="required"><br>
+				<label>Detalhes adicionais</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Enviar mensagem</button>
+			</form>
+			</div>
+		</div>
+	</div>
+
+
+<!-- FEEDBACK -->
+	<div class="title2" id="feedBACK">
+		<span>Feedback</span>
+		<div class="shortdesc2">
+			<p>Deixe seu feedback pois é muito importante pra nós</p>
+		</div>
+	</div>
+
+	<div class="feedbox">
+		<div class="feed">
+			<form action="mailto:marianojhog86@gmail.com" method="post" enctype="text/plain">
+				<label>Seu nome</label><br>
+				<input type="text" name="" class="fname" required="required"><br>
+				<label>Email</label><br>
+				<input type="email" name="mail" required="required"><br>
+				<label>Detalhes adicionais</label><br>
+				<textarea name="addtional"></textarea><br>
+				<button type="submit" id="csubmit">Enviar mensagem</button>
+			</form>
+		</div>
+	</div>
+
+<!-- Sliding Information -->
+	<marquee style="background: linear-gradient(to right, #37d3fa, #27df30); margin-top: 50px;" direction="left" onmouseover="this.stop()" onmouseout="this.start()" 
+	scrollamount="20"><div class="marqu">“A educação é o passaporte para o futuro, pois o amanhã pertence a quem se prepara hoje.” “Sua atitude, não sua aptidão,determinará sua altitude” “Se você acha que a educação é cara, experimente a ignorância.” “A única pessoa educada é aquela que aprendeu a aprender... e mudar.”</div></marquee>
+
+<!-- FOOTER -->
+	<footer>
+		<div class="footer-container">
+			<div class="left-col">
+				<img src="images/icon/mle.png" style="width: 200px;">
+				<div class="logo"></div>
+				<div class="social-media">
+					<a href="#"><img src="images/icon\fb.png"></a>
+					<a href="#"><img src="images/icon\insta.png"></a>
+					<a href="#"><img src="images/icon\tt.png"></a>
+					<a href="#"><img src="images/icon\ytube.png"></a>
+					<a href="#"><img src="images/icon\linkedin.png"></a>
+				</div><br><br>
+				<p class="rights-text">Copyright © 2022 Created By MLE.TEC - All Rights Reserved.</p>
+				<br><p><img src="images/icon/location.png">Prainha - Aquiraz,CE - BRAZIL<br>Rua Nossa Sra Conceição, 159</p><br>
+				<p><img src="images/icon/phone.png"> +55-(85)9-8708-0180<br><img src="images/icon/mail.png">&nbsp; marianojhog86@gmail.com</p>
+			</div>
+			<div class="right-col">
+				<h1 style="color: #fff">Nosso Newsletter</h1>
+				<div class="border"></div><br>
+				<p>Digite seu e-mail para receber nossas novidades e atualizações</p>
+				<form class="newsletter-form">
+					<input class="txtb" type="email" placeholder="Digite Seu Email">
+					<input class="btn" type="submit" value="Enviar">
+				</form>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
